@@ -1,0 +1,35 @@
+post_install() {
+    # systemctl daemon-reload
+    # systemctl enable --now i3-picture-of-the-day.timer
+
+    echo " /--------------------------------------------------------------------------------------\ "
+    echo " |                                                                                      | "
+    echo " | You have to manulay enable timer to start service, to do so run:                     | "
+    echo " |                                                                                      | "
+    echo " | systemctl daemon-reload && systemctl enable --now --user i3-picture-of-the-day.timer | "
+    echo " |                                                                                      | "
+    echo " \--------------------------------------------------------------------------------------/ "
+
+# Config creation moved to i3-picture-of-the-day.sh
+#
+#     user_home=$(getent passwd $(logname) | cut -d: -f6)
+#
+#     config_dir="$user_home/.config/i3-picture-of-the-day"
+#     if [[ ! -d "$config_dir" ]]; then
+#         mkdir -p "$config_dir"
+#         cat <<EOF >"$config_dir/config"
+# # default config 
+# feh_options=--bg-fill
+# save=false
+# save_location=~/Pictures/picture-of-the-day/nasa/
+# EOF
+#     fi
+#
+#     chown -R $(logname):$(logname) "$config_dir"
+}
+
+# post_remove() {
+#     # systemctl stop i3-picture-of-the-day.timer
+#     # systemctl disable i3-picture-of-the-day.timer
+#     # systemctl daemon-reload
+# }

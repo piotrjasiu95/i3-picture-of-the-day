@@ -1,0 +1,9 @@
+[Unit]
+Description=Wallpaper Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2h
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,5 @@
+[Unit]
+Description=Daily Wallpaper Fetcher
+
+[Service]
+ExecStart=/usr/bin/i3-picture-of-the-day.sh
