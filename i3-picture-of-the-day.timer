@@ -2,7 +2,7 @@
 Description=Wallpaper Timer
 
 [Timer]
-OnBootSec=1min
+OnBootSec=2min
 OnUnitActiveSec=2h
 
 [Install]
