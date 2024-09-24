@@ -1,7 +1,9 @@
+# Maintainer: github.com/piotrjasiu95
+
 pkgname=i3-picture-of-the-day
 pkgver=1.0
 pkgrel=1
-pkgdesc="i3 picture of the daily is a wallpaper fetcher"
+pkgdesc="A simple wallpaper fetcher for i3wm"
 arch=('any')
 url="https://github.com/piotrjasiu95/i3-picture-of-the-day"
 license=('MIT')
